@@ -4,11 +4,10 @@ import { MENU } from '../const.js'
 
 export class MenuBar extends Component {
   render() {
-    const {lang} = this.props; 
-    console.log(lang);
+    const {lang, onClickMenu, activeSection} = this.props; 
     return(
-      <ul className="menu_bar flex">
-        {MENU.map( m => <li key={m.id}>{m.caption[lang]}</li>)}
+      <ul className="menu_bar">
+        {MENU.map( m => <li key={m.id} className = {activeSection === m.id ? "active" : ""} onClick={() => onClickMenu(m)}>{m.caption[lang]} </li>)}
       </ul>   
     )
   }

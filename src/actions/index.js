@@ -5,9 +5,9 @@ export function changeLang(newLang) {
   }
 }
 
-export function changeMenuItem(newItem) {
+export function clickMenu(newSection) {
   return {
     type: 'CHANGE_MENUITEM',
-    newItem
+    newSection
   }
 }

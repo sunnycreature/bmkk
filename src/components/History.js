@@ -3,25 +3,23 @@ import '../App.css';
 
 export class History extends Component {
   render() {
-
-    const { historyText } = this.props;
-
+    const { historyText, historyTitle, historyBtnName} = this.props;
     return(
       <section>
         <div className="history flex">
           <div className="history_left">
-            <h1>История</h1>            
+            <h1>{historyTitle}</h1>            
             <div className="history_text">
               {historyText}
             </div>
             <div className="button_red">
-              Подробнее
+              {historyBtnName}
             </div> 
           </div>
           <div className="history_slider">            
           </div> 
         </div>      
       </section>  
-)
+    )
   }
 } 
