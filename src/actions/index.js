@@ -1,5 +1,5 @@
 
-import { HOST_ADDR, ID_PRODUCTS } from './const';
+import { HOST_ADDR, ID_PRODUCTS } from '../const';
 
 export function changeLang(newLang) {
   return {
