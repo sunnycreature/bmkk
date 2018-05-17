@@ -23,6 +23,8 @@ export function clickMenu(dispatch, newSection) {
   }
 }
 
+fetch(HOST_ADDR)
+
 export function LoadGoodGroup (goodgroup) {
   return {
     type: 'LOAD_GOODGROUP',
