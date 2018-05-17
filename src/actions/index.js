@@ -11,3 +11,10 @@ export function clickMenu(newSection) {
     newSection
   }
 }
+
+export function LoadGoodGroup (goodgroup) {
+  return {
+    type: 'LOAD_GOODGROUP',
+    goodgroup
+  }
+}

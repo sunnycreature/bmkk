@@ -11,6 +11,8 @@ export const ID_CLIENTS   = 4;
 export const ID_TRADE     = 5;
 export const ID_CONTACTS  = 6;
 
+export const HOST_ADDR = 'http://localhost:3003/goodgroup'
+
 export const MENU = [
   {
     id: ID_HOME,

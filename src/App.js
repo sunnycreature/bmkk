@@ -120,17 +120,9 @@ class App extends Component {
             </div>        
           </header>  
           <div className="main">
-            <ConnectedHistory/>
             <ConnectedProducts/>          
-            <ConnectedAchievements/> 
-            <ConnectedClients/>             
           </div>
-          <div className="footer">
-            <a className="sLogo footLogo" href="http://localhost:3000/">
-              <img src={logo} className="App-logo" alt="logo" />
-            </a>
-            <ConnectedMenuFooter/>  
-          </div>           
+         
         </div>
       </Provider>            
       );
@@ -138,6 +130,15 @@ class App extends Component {
 }
 
 export default App;
-
+/*            <ConnectedHistory/>
+            <ConnectedProducts/>          
+            <ConnectedAchievements/> 
+            <ConnectedClients/>  
+          <div className="footer">
+            <a className="sLogo footLogo" href="http://localhost:3000/">
+              <img src={logo} className="App-logo" alt="logo" />
+            </a>
+            <ConnectedMenuFooter/>  
+          </div>              */
 //<a href="/pw/contact-us/">+375-17-2561759</a>  onChangeMenuItem: (newItem) => dispatch(changeMenuItem(activeItem))}
 /*    <div><CarouselSlider/></div>   import { CarouselSlider } from './components/DemoCarousel'      */

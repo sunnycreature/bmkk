@@ -18,7 +18,19 @@ const getInitialState = () =>
         productsBtnMeat: PRODUCTS.btnMeat[LANG_BE], 
         productsBtnConserves: PRODUCTS.btnConserves[LANG_BE],
         footerRightsText: RIGHTS.text[LANG_BE],                 
-        menuText: MENU 
+        menuText: MENU, 
+        goodgroup: [
+          {
+            "ruid": "",
+            "parent": "",
+            "name": 
+              {
+                "ru": "",
+                "be": "",
+                "en": ""
+              }    
+          }  
+        ],  
       }
     );
   };
@@ -49,5 +61,9 @@ export const bmkkReducer = (state = getInitialState(), action) => {
     return {...state, activeSection: newSection}   
   }
 
+ if (action.type === 'LOAD_GOODGROUP') {
+  const { goodgroup } = action;
+  return {...state, goodgroup }    
+ }
   return state;
 };

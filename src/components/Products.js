@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-
+import { MENU } from '../const.js'
 
 export class Products extends Component {
   render() {
@@ -9,8 +9,17 @@ export class Products extends Component {
       <section>
         <div className="products">
           <h1>{productsTitle}</h1>          
-          <div className="products_btn flex">            
-            <div className="products_bgr sausages">
+          <div className="products_btn flex">   
+            <ul className="">
+              {MENU.map( m => <li key={m.id} >{m.caption['EN']} </li>)}
+            </ul>               
+          </div>
+        </div>      
+      </section>  
+)
+  }
+} 
+/*<div className="products_bgr sausages">
               <div className="button_white">
                 {productsBtnSausages}
               </div>
@@ -24,10 +33,4 @@ export class Products extends Component {
               <div className="button_white">
                 {productsBtnConserves}
               </div>
-            </div>   
-          </div>
-        </div>      
-      </section>  
-)
-  }
-} 
+            </div>    */

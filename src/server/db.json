@@ -1,0 +1,20 @@
+{
+  "version": ["1.0"],
+  "goods": [
+    {
+      "groupname": "111",
+      "goodname": "1",
+      "img": "img\catalog\kolb1.jpg"
+    }, 
+    {
+      "groupname": "222",
+      "goodname": "2",
+      "img": "img\catalog\kolb2.jpg"
+    }, 
+    {
+      "groupname": "333",
+      "goodname": "3",
+      "img": "img\catalog\kolb2.jpg"
+    }  
+  ] 
+}
